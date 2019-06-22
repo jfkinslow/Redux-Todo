@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+.todo {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px 0;
+  min-width: 100px;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+}
+
+.unselectable {
+  user-select: none;
+}
