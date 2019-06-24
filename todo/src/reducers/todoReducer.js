@@ -15,7 +15,7 @@ export const todoReducer = (state = initialState, action) => {
                     return todo = action.payload; 
                 }
                 else {
-                    return false;
+                    return todo;
                 }
             });
             newState = {...state, todo: newTodo};
@@ -27,7 +27,7 @@ export const todoReducer = (state = initialState, action) => {
                         return todo = action.payload; 
                     }
                     else {
-                        return false;
+                        return todo;
                     }
                 });
                 newState = {...state, todo: newTodo};
