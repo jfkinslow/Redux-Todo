@@ -25,6 +25,11 @@ export const fetchTodos = () => dispatch => {
     let newState = localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : {
         todo: []
     };
+    if (typeof newState.todo !== "object") {
+        newState = {
+            todo: []
+        }
+    }
     localStorage.setItem('state', JSON.stringify(newState));
     dispatch({type: FETCHED, payload: newState});
 }
