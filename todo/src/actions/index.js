@@ -5,6 +5,7 @@ export const ADDTODO = "ADDTODO";
 export const FETCHED = "FETCHED";
 export const SAVE = "SAVE";
 export const DELETE = "DELETE";
+export const DELETECOMPLETE = "DELETECOMPLETE";
 
 export const checkTodo = (todo) => dispatch => {
     let newTodo = {...todo};
@@ -32,4 +33,7 @@ export const saveTodos = (newState) => {
 }
 export const deleteTodo = (todo) => dispatch => {
     dispatch({type: DELETE, payload: todo});
+}
+export const removeCompleted = () => dispatch => {
+    dispatch({type: DELETECOMPLETE})
 }

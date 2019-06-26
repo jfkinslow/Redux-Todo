@@ -36,11 +36,15 @@
   margin: 10px 0;
   padding: 10px 0;
   min-width: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.todo-complete {
+.todo-complete p {
   text-decoration: line-through;
 }
+
+
 
 .unselectable {
   user-select: none;

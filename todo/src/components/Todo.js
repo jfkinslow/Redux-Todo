@@ -16,7 +16,7 @@ export class Todo extends React.Component {
     render() {
         return (
             <div unselectable="on" className={this.props.todo.completed ? "todo todo-complete" : "todo"}>
-                <p unselectable="on" className="unselectable" onClick={this.check.bind(this)}>{this.props.todo.text}<button onClick={this.deleteTodo.bind(this)}>Delete</button></p>
+                <p unselectable="on" className="unselectable" onClick={this.check.bind(this)}>{this.props.todo.text}</p><button onClick={this.deleteTodo.bind(this)}>Delete</button>
             </div>
         )
     }
